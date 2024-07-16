@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="codigo.js"></script>
+<body>
+    <center>
+        <h1>Bienvenidos a nuestro Car Site </h1>
+    
+    <br>
+    <br>
+    <table>
+         <tr>
+            <td>Marca :</td>
+            <td>
+                    <select name="cmbMarca" id="cmbMarca" onchange="CambiarMarca()">
+                        <option value="1">Honda</option>
+                        <option value="2">Toyota</option>
+                        <option value="3">Nissan</option>
+                        <option value="4">Ford</option>
+                        <option value="5">Mazda</option>
+                    </select>
+            </td>
+         </tr>   
+         <tr>
+            <td>Precio</td>
+            <td><input type="text" id="txtPrecio" name="txtPrecio"></td>
+         </tr>
+         <tr>
+            <td>Extras</td>
+            <td>
+                <input type="checkbox" id="chkRines" name="chkRines" onclick="codigoExtras(1)">Rines <input type="checkbox" id="chkParrilla" name="chkParrilla" onclick="codigoExtras(2)">Parrilla
+                <input type="checkbox" id="chkDefensa" name="chkDefensa" onclick="codigoExtras(3)">Defensa <input type="checkbox" id="chkPantalla" name="chkPamtalla" onclick="codigoExtras(4)">Pantalla
+            </td>
+         </tr>
+    </table>
+</center>
+</body>
+</html>
