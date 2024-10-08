@@ -1,0 +1,18 @@
+<h1>Buscar Información de País</h1>
+<form method="POST">
+    {% csrf_token %}
+    <label for="country_name">Nombre del País:</label>
+    <input type="text" id="country_name" name="country_name" required>
+    <button type="submit">Buscar</button>
+</form>
+
+{% if country_info %}
+    <h2>Detalles del País</h2>
+    <p><strong>Nombre:</strong> {{ country_info.name }}</p>
+    <p><strong>Capital:</strong> {{ country_info.capital }}</p>
+    <p><strong>Región:</strong> {{ country_info.region }}</p>
+    <p><strong>Población:</strong> {{ country_info.population }}</p>
+    <img src="{{ country_info.flag }}" alt="Bandera">
+{% elif error %}
+    <p>{{ error }}</p>
+{% endif %}
