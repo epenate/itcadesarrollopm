@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Agregar Alumno</title>
+</head>
+<body>
+    <h1>Agregar Alumno</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="materia">Materia:</label>
+        <input type="text" id="materia" name="materia" required><br><br>
+
+        <label for="notafinal">Nota Final:</label>
+        <input type="number" id="notafinal" name="notafinal" required><br><br>
+
+        <button type="submit">Agregar</button>
+    </form>
+</body>
+</html>
