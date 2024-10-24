@@ -1,0 +1,77 @@
+Dentro de productos/templates/productos/, crea las plantillas HTML necesarias.
+
+a. lista_productos.html
+html
+Copiar código
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Productos</title>
+</head>
+<body>
+    <h2>Lista de Productos</h2>
+    <a href="{% url 'crear_producto' %}">Crear Nuevo Producto</a>
+    <ul>
+        {% for producto in productos %}
+            <li>
+                {{ producto.nombre }} - ${{ producto.precio }} - {{ producto.existencias }} existencias
+                <img src="{{ producto.imagen.url }}" alt="{{ producto.nombre }}" width="100">
+                <a href="{% url 'editar_producto' producto.id %}">Editar</a> |
+                <a href="{% url 'eliminar_producto' producto.id %}">Eliminar</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+b. crear_producto.html
+html
+Copiar código
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crear Producto</title>
+</head>
+<body>
+    <h2>Crear Producto</h2>
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Guardar</button>
+    </form>
+</body>
+</html>
+c. editar_producto.html
+html
+Copiar código
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Editar Producto</title>
+</head>
+<body>
+    <h2>Editar Producto</h2>
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Guardar Cambios</button>
+    </form>
+</body>
+</html>
+d. eliminar_producto.html
+html
+Copiar código
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Eliminar Producto</title>
+</head>
+<body>
+    <h2>Eliminar Producto</h2>
+    <p>¿Estás seguro de que deseas eliminar {{ producto.nombre }}?</p>
+    <form method="POST">
+        {% csrf_token %}
+        <button type="submit">Sí, eliminar</button>
+        <a href="{% url 'lista_productos' %}">Cancelar</a>
+    </form>
+</body>
+</html>
