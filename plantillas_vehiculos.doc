@@ -1,0 +1,67 @@
+a. lista_vehiculos.html
+html
+Copiar código
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Vehículos</title>
+</head>
+<body>
+    <h2>Vehículos Disponibles</h2>
+    <ul>
+        {% for vehiculo in vehiculos %}
+            <li>
+                <h3>{{ vehiculo.nombre }}</h3>
+                <img src="{{ vehiculo.imagen.url }}" width="200">
+                <p>Precio: ${{ vehiculo.precio_base }}</p>
+                <a href="{% url 'detalle_vehiculo' vehiculo.id %}">Ver detalles</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+b. detalle_vehiculo.html
+html
+Copiar código
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detalle del Vehículo</title>
+</head>
+<body>
+    <h2>{{ vehiculo.nombre }}</h2>
+    <img src="{{ vehiculo.imagen.url }}" width="300">
+    <p>Precio base: ${{ vehiculo.precio_base }}</p>
+    <p>{{ vehiculo.descripcion }}</p>
+
+    <h3>Opciones de Personalización</h3>
+    <form method="post" action="{% url 'procesar_compra' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Calcular Total</button>
+    </form>
+</body>
+</html>
+c. confirmacion_compra.html
+html
+Copiar código
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Confirmación de Compra</title>
+</head>
+<body>
+    <h2>Confirmación de Compra</h2>
+    <p>Vehículo seleccionado: {{ vehiculo.nombre }}</p>
+    <p>Precio base: ${{ vehiculo.precio_base }}</p>
+
+    <h3>Opciones seleccionadas:</h3>
+    <ul>
+        {% for opcion in opciones_seleccionadas %}
+            <li>{{ opcion.nombre }} - ${{ opcion.precio }}</li>
+        {% endfor %}
+    </ul>
+
+    <p><strong>Total a pagar: ${{ total }}</strong></p>
+</body>
+</html>
