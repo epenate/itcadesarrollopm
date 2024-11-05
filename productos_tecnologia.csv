@@ -1,0 +1,101 @@
+ID,Nombre,Categoría,Precio,Stock
+1,Laptop,Computación,798.67,199
+2,Monitor,Redes,147.13,276
+3,Teclado,Accesorios,313.64,72
+4,Mouse,Smart Home,1380.1,492
+5,Impresora,Accesorios,668.26,127
+6,Disco Duro Externo,Almacenamiento,1607.32,211
+7,Memoria USB,Audio y Video,861.99,434
+8,Tablet,Redes,1127.47,435
+9,Smartphone,Accesorios,198.61,150
+10,Cámara Web,Accesorios,592.14,195
+11,Auriculares,Redes,407.17,188
+12,Proyector,Periféricos,532.42,215
+13,Router,Redes,1005.15,359
+14,Switch de Red,Almacenamiento,686.29,463
+15,Adaptador HDMI,Periféricos,645.65,89
+16,Cable Ethernet,Computación,1480.57,56
+17,Cargador Portátil,Audio y Video,1199.39,343
+18,Almacenamiento NAS,Redes,436.18,190
+19,UPS,Smart Home,513.68,477
+20,Tarjeta Gráfica,Accesorios,737.34,70
+21,Fuente de Poder,Computación,418.95,327
+22,Placa Base,Almacenamiento,1003.21,293
+23,Procesador,Periféricos,1274.44,5
+24,Memoria RAM,Audio y Video,277.19,235
+25,SSD,Redes,1153.05,438
+26,Módem,Smart Home,1719.63,196
+27,Altavoces Bluetooth,Almacenamiento,1892.47,262
+28,Docking Station,Almacenamiento,1147.52,498
+29,Soporte de Monitor,Smart Home,151.4,282
+30,Teclado Mecánico,Computación,393.77,116
+31,Mouse Gamer,Smart Home,1132.74,219
+32,Pad Mouse,Periféricos,1606.75,301
+33,Impresora 3D,Periféricos,194.36,45
+34,Escáner,Accesorios,1410.62,405
+35,Enfriador de CPU,Smart Home,426.51,411
+36,Ventilador de PC,Periféricos,160.92,442
+37,Joystick,Computación,648.57,75
+38,Controlador de Juegos,Almacenamiento,735.59,417
+39,Pantalla Táctil,Periféricos,872.14,79
+40,Cámara de Seguridad,Accesorios,421.34,272
+41,Dron,Almacenamiento,1623.77,240
+42,Lámpara LED,Accesorios,916.12,351
+43,Lápiz Óptico,Computación,1402.03,214
+44,Router WiFi 6,Periféricos,1980.69,151
+45,Repetidor WiFi,Smart Home,1245.08,242
+46,Cable HDMI,Accesorios,868.77,166
+47,Adaptador USB,Computación,1200.55,422
+48,Adaptador VGA,Computación,301.44,223
+49,Adaptador USB-C,Audio y Video,157.68,399
+50,Estación de Carga,Computación,658.57,26
+51,Hub USB,Periféricos,936.28,433
+52,Control Remoto,Redes,47.12,368
+53,Grabadora de Voz,Almacenamiento,1116.06,93
+54,Micrófono USB,Computación,116.67,448
+55,Lector de Tarjetas,Computación,1951.25,450
+56,Cámara Digital,Computación,29.91,100
+57,Tripode,Redes,1829.76,476
+58,Gimbal,Periféricos,629.32,274
+59,Estabilizador,Accesorios,184.0,236
+60,Microscopio Digital,Audio y Video,1188.65,316
+61,Cable Lightning,Smart Home,1477.81,480
+62,Cable USB-C,Periféricos,1677.73,291
+63,Cargador Inalámbrico,Accesorios,1213.01,129
+64,Base para Portátil,Smart Home,1074.99,473
+65,Silla Gamer,Audio y Video,59.48,78
+66,Mesa para Computadora,Computación,903.5,165
+67,Monitor Curvo,Accesorios,240.43,130
+68,Altavoz Inteligente,Accesorios,761.51,57
+69,Aire Acondicionado Portátil,Accesorios,1969.96,251
+70,Controlador MIDI,Redes,1262.89,317
+71,Audífonos Inalámbricos,Computación,1914.82,71
+72,Lector de Huellas Digitales,Periféricos,260.66,339
+73,Tarjeta de Sonido,Periféricos,1123.21,227
+74,Luces LED,Audio y Video,483.18,90
+75,Tablet Gráfica,Audio y Video,1958.66,184
+76,Enrutador VPN,Almacenamiento,592.3,364
+77,Adaptador Bluetooth,Audio y Video,570.44,495
+78,Monitor Portátil,Audio y Video,394.48,406
+79,Consola de Juegos,Periféricos,986.38,280
+80,Tarjeta de Captura,Audio y Video,815.43,142
+81,Smartwatch,Almacenamiento,139.48,210
+82,Medidor de Energía,Audio y Video,1930.21,99
+83,Disco SSD Externo,Periféricos,579.89,224
+84,Reproductor de Blu-ray,Redes,1297.88,341
+85,Escáner Portátil,Accesorios,1008.39,498
+86,Impresora Térmica,Computación,1531.86,124
+87,Altavoz Portátil,Periféricos,712.28,267
+88,Cámara IP,Almacenamiento,157.32,213
+89,Tira LED Inteligente,Computación,1540.34,220
+90,Termómetro Digital,Computación,604.1,440
+91,Sensor de Movimiento,Periféricos,1395.35,383
+92,Sensor de Puerta,Almacenamiento,780.27,308
+93,Sensor de Temperatura,Periféricos,47.8,306
+94,Luz de Emergencia,Computación,830.94,125
+95,Extensor de Red,Smart Home,1668.3,249
+96,Control de Voz,Periféricos,1202.2,27
+97,Interruptor Inteligente,Periféricos,1377.74,243
+98,Aspiradora Inteligente,Almacenamiento,1253.12,249
+99,Cerradura Digital,Redes,605.4,272
+100,Timbre Inteligente,Periféricos,1659.12,177
